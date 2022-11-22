@@ -1,0 +1,88 @@
+draw_bold_text_with_bright_colors: true
+
+shell:
+  program: /bin/zsh
+  args:
+    - -l
+    - -c
+    - "tmux attach || tmux"
+
+window:
+  dimensions:
+    columns: 110
+    lines: 30
+  decorations: full
+  startup_mode: Windowed
+  title: "Alacritty Terminal $PWD"
+  dynamic_title: true
+  opacity: 0.7
+
+font:
+  normal:
+    family: "MesloLGS NF"
+    style: Regular
+  bold:
+    family: "MesloLGS NF"
+    style: Bold
+  italic:
+    family: "MesloLGS NF"
+    style: Bold
+  bold_italic:
+    family: "MesloLGS NF"
+    style: Bold
+  size: 11.0
+  offset:
+    x: 0
+    y: 1
+  draw_bold_text_with_bright_colors: false
+
+# Cyberpunk-Neon colours
+colors:
+  # Default colours
+  primary:
+    background: '0x000b1e'
+    foreground: '0x0abdc6'
+
+  # Colors that should be used to draw the terminal cursor. If these are unset,
+  # the cursor colour will be the inverse of the cell colour.
+  # cursor:
+  #   text: '0x2e2e2d'
+  #   # text: '0x000000'
+  #   cursor: '0xffffff'
+
+  # Normal colors
+  normal:
+    black:   '0x123e7c'
+    red:     '0xff0000'
+    green:   '0xd300c4'
+    yellow:  '0xf57800'
+    blue:    '0x123e7c'
+    magenta: '0x711c91'
+    cyan:    '0x0abdc6'
+    white:   '0xd7d7d5'
+
+  # Bright colors
+  bright:
+    black:   '0x1c61c2'
+    red:     '0xff0000'
+    green:   '0xd300c4'
+    yellow:  '0xf57800'
+    blue:    '0x00ff00'
+    magenta: '0x711c91'
+    cyan:    '0x0abdc6'
+    white:   '0xd7d7d5'
+
+  # dim colors
+  dim:
+    black:   '0x1c61c2'
+    red:     '0xff0000'
+    green:   '0xd300c4'
+    yellow:  '0xf57800'
+    blue:    '0x123e7c'
+    magenta: '0x711c91'
+    cyan:    '0x0abdc6'
+    white:   '0xd7d7d5'
+
+key_bindings:
+ - { key: C, mods: Control|Shift, action: Copy }
+ - { key: V, mods: Control|Shift, action: Paste }
