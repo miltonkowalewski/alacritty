@@ -26,7 +26,7 @@ font:
     style: Bold
   italic:
     family: "MesloLGS NF"
-    style: Bold
+    style: Italic
   bold_italic:
     family: "MesloLGS NF"
     style: Bold
